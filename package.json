@@ -1,6 +1,6 @@
 {
-  "homepage": "https://abenjaminov.github.io/",
-  "name": "abenjaminov",
+  "homepage": "https://abenjaminov.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -26,6 +26,8 @@
     "build": "node fetch.js && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build"
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
     "check-format": "prettier -c \"./**/*.{js,css,json,scss}\""
   },
